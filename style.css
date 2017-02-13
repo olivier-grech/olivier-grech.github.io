@@ -7,7 +7,6 @@ body {
     max-width: 900px;
     margin: 40px auto;
     background-color: #fafafa;
-    
 }
 
 
@@ -15,5 +14,16 @@ body {
     width: 200px; 
     height: 200px; 
     float: right;
-    
 }
+
+#mailto {color:#1976D2  !important; background-color:transparent; text-decoration:none}
+#mailto:link    {color:#1976D21976D2  !important; background-color:transparent; text-decoration:none}
+#mailto:visited {color:#1976D21976D2  !important; background-color:transparent; text-decoration:none}
+#mailto:hover   {color:#1976D2  !important; background-color:transparent; text-decoration:underline}
+#mailto:active  {color:#1976D2  !important; background-color:transparent; text-decoration:underline}
+
+a:link    {color:white; background-color:transparent; text-decoration:none}
+a:visited {color:white; background-color:transparent; text-decoration:none}
+a:hover   {color:white; background-color:transparent; text-decoration:underline}
+a:active  {color:white; background-color:transparent; text-decoration:underline}
+
