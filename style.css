@@ -1,29 +1,23 @@
-@font-face {
-    font-family: material;
-    src: url(sansation_bold.woff);
-}
-
 body {
-    max-width: 900px;
-    margin: 40px auto;
-    background-color: #fafafa;
+	background-color: #F5F5F5;
+	font-family: Calibri, sans-serif;
+	color: #424242;
 }
 
-
-#info {
-    width: 200px; 
-    height: 200px; 
-    float: right;
+#title {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	
+	width: 100%;
+	text-align: center;
 }
 
-#mailto {color:#1976D2  !important; background-color:transparent; text-decoration:none}
-#mailto:link    {color:#1976D21976D2  !important; background-color:transparent; text-decoration:none}
-#mailto:visited {color:#1976D21976D2  !important; background-color:transparent; text-decoration:none}
-#mailto:hover   {color:#1976D2  !important; background-color:transparent; text-decoration:underline}
-#mailto:active  {color:#1976D2  !important; background-color:transparent; text-decoration:underline}
-
-a:link    {color:white; background-color:transparent; text-decoration:none}
-a:visited {color:white; background-color:transparent; text-decoration:none}
-a:hover   {color:white; background-color:transparent; text-decoration:underline}
-a:active  {color:white; background-color:transparent; text-decoration:underline}
-
+#main {
+	background-color: #FFFFFF;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e0e0e0;
+	width: 30%;
+	margin: auto;
+	padding: 25px;
+}
