@@ -1,0 +1,25 @@
+body {
+    background-color: #2196f3;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 40%;
+    height: 100vh;
+    padding: 60px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
