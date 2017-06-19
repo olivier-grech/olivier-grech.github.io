@@ -5,16 +5,16 @@
   
   <title>Making a barebone platformer with Löve | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Löve is a nice framework for developing games in Lua. While it is somewhat limited compared to other frameworks, it makes it well suited for beginners. Löve includes the physic engine Box2D by default">
+  <meta name="description" content="Löve is a nice framework for developing games in Lua. While it is somewhat limited compared to other frameworks, it makes it well suited for beginners. This article is written as an introduction to Lö">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Making a barebone platformer with Löve">
 <meta property="og:url" content="http://yoursite.com/2017/06/19/Making-a-barebone-platformer-with-Löve/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Löve is a nice framework for developing games in Lua. While it is somewhat limited compared to other frameworks, it makes it well suited for beginners. Löve includes the physic engine Box2D by default">
-<meta property="og:updated_time" content="2017-06-19T10:13:14.009Z">
+<meta property="og:description" content="Löve is a nice framework for developing games in Lua. While it is somewhat limited compared to other frameworks, it makes it well suited for beginners. This article is written as an introduction to Lö">
+<meta property="og:updated_time" content="2017-06-19T12:30:55.086Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Making a barebone platformer with Löve">
-<meta name="twitter:description" content="Löve is a nice framework for developing games in Lua. While it is somewhat limited compared to other frameworks, it makes it well suited for beginners. Löve includes the physic engine Box2D by default">
+<meta name="twitter:description" content="Löve is a nice framework for developing games in Lua. While it is somewhat limited compared to other frameworks, it makes it well suited for beginners. This article is written as an introduction to Lö">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS-каналы"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Поиск"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -85,17 +85,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>Löve</strong> is a nice framework for developing games in Lua. While it is somewhat limited compared to other frameworks, it makes it well suited for beginners.</p>
-<p>Löve includes the physic engine Box2D by default. I challenged myself to create the basis for a simple platformer without using Box2D. I mostly drew inspiration from <a href="http://gamemakertutorials.com/?p=383" target="_blank" rel="external">this tutorial</a>, which was written for GameMaker. However, it uses some concepts specifics to GameMaker, so there were some adjustments to make. </p>
+        <p><strong>Löve</strong> is a nice framework for developing games in Lua. While it is somewhat limited compared to other frameworks, it makes it well suited for beginners. This article is written as an introduction to Löve. I’ll assume you understand the basics of programmation, such as variables, functions, and loops, but otherwise there’s no prior knowledge recquired. The Lua syntax is very simple, so you can learn as you go. For more details, go to the official <a href="https://www.lua.org/pil/1.html" target="_blank" rel="external">Lua website</a>.</p>
+<p>Löve includes the physic engine <strong>Box2D</strong> by default. I challenged myself to create the basis for a simple platformer without using Box2D. I mostly drew inspiration from <a href="http://gamemakertutorials.com/?p=383" target="_blank" rel="external">this tutorial</a>, which was written for GameMaker. However, it uses some concepts specifics to GameMaker, so there were some adjustments to make. </p>
 <p>I wanted the final code to be as short as possible. I managed to make it under 150 lines, but I took some shortcuts and not everything is as structured as it should be. Feel free to send me suggestions on how to improve it.</p>
-<h2 id="Installing-and-running-Love"><a href="#Installing-and-running-Love" class="headerlink" title="Installing and running Löve"></a>Installing and running Löve</h2><p>First, go to <a href="https://love2d.org/" target="_blank" rel="external">Löve website</a> and download and install the last version of Löve. Make sure to create a shortcut to it on your desktop. Then, create an empty folder (name it whatever you want) and create an empty file called <em>main.lua</em> within this folder. If you want to make sure everything is set up correctly, copy and paste the following code into the <em>main.lua</em> file:</p>
+<h2 id="Installing-and-running-Love"><a href="#Installing-and-running-Love" class="headerlink" title="Installing and running Löve"></a>Installing and running Löve</h2><p>First, go to the <a href="https://love2d.org/" target="_blank" rel="external">Löve website</a> and download and install the last version of Löve. Make sure to create a shortcut to it on your desktop. Then, create an empty folder (name it whatever you want) and create an empty file called <em>main.lua</em> within this folder. If you want to make sure everything is set up correctly, copy and paste the following code into the main.lua file:</p>
 <figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.draw</span><span class="params">()</span></span></div><div class="line">    love.graphics.<span class="built_in">print</span>(<span class="string">"Hello World!"</span>, <span class="number">400</span>, <span class="number">300</span>)</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
 <p>Then, drag and drop your folder into the Löve icon on your desktop. If you did everything properly, a black window with “Hello World!” written in white should open.</p>
+<h2 id="Drawing-the-level"><a href="#Drawing-the-level" class="headerlink" title="Drawing the level"></a>Drawing the level</h2><p>The first step in our tutorial is to draw some platforms on screen, as well as the player character. To begin with, we need to examine the structure of a Löve program. let’s copy and paste this code into the main.lua file:</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.load</span><span class="params">()</span></span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.update</span><span class="params">(dt)</span></span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.draw</span><span class="params">()</span></span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>These three functions are the core of a game written with Löve. Let’s examine them independantly:</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.load</span><span class="params">()</span></span></div></pre></td></tr></table></figure>
+<p><code>love.load()</code> is the first function called when the game is launched. In other words, the code written between <code>function love.load()</code> and <code>end</code> will be the first one to be executed. <code>love.load()</code> is mostly used for initializing values. For example, you could write <code>player.hp = 100</code> to initialize the player hit points to 100 when the game is launched.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/19/Making-a-barebone-platformer-with-Löve/" data-id="cj43yg4nh0000js49umudjcyj" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/06/19/Making-a-barebone-platformer-with-Löve/" data-id="cj43yg4nh0000js49umudjcyj" class="article-share-link">Поделиться</a>
       
       
     </footer>
@@ -119,7 +124,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Архив</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
     </div>
@@ -129,7 +134,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Недавние записи</h3>
     <div class="widget">
       <ul>
         
@@ -150,7 +155,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Olivier Grech<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Создано с помощью <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
