@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-19T08:23:28.899Z</updated>
+  <updated>2017-06-19T09:18:56.433Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Test</title>
+    <link href="http://yoursite.com/2017/06/19/Test/"/>
+    <id>http://yoursite.com/2017/06/19/Test/</id>
+    <published>2017-06-19T09:18:56.000Z</published>
+    <updated>2017-06-19T09:18:56.433Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>A barebone Lua platform in less than 150 lines of code</title>
