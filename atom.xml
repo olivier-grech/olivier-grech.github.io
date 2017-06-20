@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-19T13:46:53.338Z</updated>
+  <updated>2017-06-20T11:49:22.048Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/06/19/Making-a-barebone-platformer-with-L%C3%B6ve/"/>
     <id>http://yoursite.com/2017/06/19/Making-a-barebone-platformer-with-Löve/</id>
     <published>2017-06-19T09:29:37.000Z</published>
-    <updated>2017-06-19T13:46:53.338Z</updated>
+    <updated>2017-06-20T11:49:22.048Z</updated>
     
     <content type="html"><![CDATA[<p><strong>Löve</strong> is a nice framework for developing games in Lua. While it is somewhat limited compared to other frameworks, it makes it well suited for beginners. This article is written as an introduction to Löve. I’ll assume you understand the basics of programmation, such as variables, functions, and loops, but otherwise there’s no prior knowledge recquired. The Lua syntax is very simple, so you can learn as you go. For more details, go to the official <a href="https://www.lua.org/pil/1.html" target="_blank" rel="external">Lua website</a>.</p>
 <p>Löve includes the physic engine <strong>Box2D</strong> by default. I challenged myself to create the basis for a simple platformer WITHOUT using Box2D. I mostly drew inspiration from <a href="http://gamemakertutorials.com/?p=383" target="_blank" rel="external">this tutorial</a>, which was written for GameMaker. However, it uses some concepts specifics to GameMaker, so there were some adjustments to make. </p>
@@ -28,7 +28,7 @@
 <h2 id="Installing-and-running-Love"><a href="#Installing-and-running-Love" class="headerlink" title="Installing and running Löve"></a>Installing and running Löve</h2><p>First, go to the <a href="https://love2d.org/" target="_blank" rel="external">Löve website</a> and download and install the last version of Löve. Make sure to create a shortcut to it on your desktop. Then, create an empty folder (name it whatever you want) and create an empty file called <em>main.lua</em> within this folder. If you want to make sure everything is set up correctly, copy and paste the following code into the main.lua file:</p>
 <figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.draw</span><span class="params">()</span></span></div><div class="line">    love.graphics.<span class="built_in">print</span>(<span class="string">"Hello World!"</span>, <span class="number">400</span>, <span class="number">300</span>)</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
 <p>Then, drag and drop your folder into the Löve icon on your desktop. If you did everything properly, a black window with “Hello World!” written in white should open.</p>
-<h2 id="Drawing-the-level"><a href="#Drawing-the-level" class="headerlink" title="Drawing the level"></a>Drawing the level</h2><p>The first step in our tutorial is to draw some platforms on screen, as well as the player character. To begin with, we need to examine the structure of a Löve program. let’s copy and paste this code into the main.lua file:</p>
+<h2 id="Drawing-the-level"><a href="#Drawing-the-level" class="headerlink" title="Drawing the level"></a>Drawing the level</h2><p>The first step in our tutorial is to draw some platforms on screen. To begin with, we need to examine the structure of a Löve program. let’s copy and paste this code into the main.lua file:</p>
 <figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.load</span><span class="params">()</span></span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.update</span><span class="params">(dt)</span></span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.draw</span><span class="params">()</span></span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
 <p>These three functions are the core of a game wrote with Löve. Let’s examine them independantly:</p>
 <figure class="highlight lua"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">love.load</span><span class="params">()</span></span></div></pre></td></tr></table></figure>
