@@ -536,9 +536,16 @@ header .nav-list-item a {
 code,
 pre {
     font-size: 0.8em;
-    /*background-color: #f8f8f8;*/ /*Default*/
-    background-color: #272822; /*Custom*/
     font-family: 'Roboto Mono', Monaco, courier, monospace
+}
+
+pre {
+     /*background-color: #f8f8f8;*/ /*Default*/
+    background-color: #272822; /*Custom*/
+}
+
+code {
+    background-color: #f8f8f8;
 }
 
 .highlight {
