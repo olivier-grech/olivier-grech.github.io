@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2017/06/21/Making-a-platformer-with-Love-Part-1/</loc>
+    <loc>http://yoursite.com/About/index.html</loc>
     
-    <lastmod>2017-06-21T18:06:24.867Z</lastmod>
+    <lastmod>2017-06-22T11:34:54.834Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/Making-a-platformer-with-Love-Part-1/</loc>
+    
+    <lastmod>2017-06-22T08:53:03.967Z</lastmod>
     
   </url>
   
