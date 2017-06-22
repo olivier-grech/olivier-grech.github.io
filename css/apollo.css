@@ -681,7 +681,8 @@ pre {
 }
 
 pre {
-    color: #525252
+    /*color: #525252*/ /*Default*/
+    color: #F8F8F0 /*Custom*/
 }
 
 pre .function .keyword,
