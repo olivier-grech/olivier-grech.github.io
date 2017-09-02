@@ -121,7 +121,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
+    font-family: monospace;
     font-size: 1em
 }
 
@@ -239,7 +239,7 @@ body {
     font-size: 15px;
     line-height: 1.6;
     background-color: #fff;
-    font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif
+    font-family: serif;
 }
 
 ul.nav,
@@ -518,7 +518,7 @@ header .nav-list-item a {
     font-weight: bold;
     text-align: center;
     background-color: #f66;
-    font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif
+    font-family: sans-serif;
 }
 
 #mask {
@@ -538,7 +538,7 @@ header .nav-list-item a {
 code,
 pre {
     font-size: 0.8em;
-    font-family: 'Roboto Mono', Monaco, courier, monospace
+    font-family: monospace;
     /*background-color: #f8f8f8;*/ /*Default*/
 }
 
@@ -889,9 +889,9 @@ footer .copyright a:hover {
     color: #888
 }
 
-@font-face {
+/*@font-face {
     font-family: 'sourcesanspro';
     src: url("../font/sourcesanspro.woff2") format("woff2"), url("../font/sourcesanspro.woff") format("woff");
     font-weight: normal;
     font-style: normal
-}
+}*/
