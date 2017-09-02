@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-02T18:33:38.261Z</updated>
+  <updated>2017-09-02T18:39:10.551Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>Making a simple platformer with Löve - Part 3</title>
     <link href="http://yoursite.com/Making-a-simple-platformer-with-Love-Part-3/"/>
     <id>http://yoursite.com/Making-a-simple-platformer-with-Love-Part-3/</id>
-    <published>2017-08-30T21:12:13.000Z</published>
-    <updated>2017-09-02T18:33:38.261Z</updated>
+    <published>2017-09-02T18:12:13.000Z</published>
+    <updated>2017-09-02T18:39:10.551Z</updated>
     
     <content type="html"><![CDATA[<p>Continuing once again from where we left off in the previous article, we’ll handle vertical collisions and jump.</p>
 <h2 id="Vertical-collisions"><a href="#Vertical-collisions" class="headerlink" title="Vertical collisions"></a>Vertical collisions</h2><p>The collision part is going to be easy, since we’re going to do the exact same thing as for horizontal collisions, except this time along the y axis.</p>
