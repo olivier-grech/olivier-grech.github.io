@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2017-09-02T18:58:28.412Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/Making-a-simple-platformer-with-Love-Part-3/</loc>
     
     <lastmod>2017-09-02T18:39:10.551Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/Making-a-simple-platformer-with-Love-Part-1/</loc>
     
     <lastmod>2017-08-31T14:22:46.415Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2017-06-22T18:21:08.000Z</lastmod>
     
   </url>
   
