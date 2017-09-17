@@ -315,8 +315,7 @@ header .logo-link {
     float: left;
     display: inline-block;
     padding: 19px 10px;
-    
-
+    font-family: sans-serif
 }
 
 header .nav {
@@ -331,7 +330,8 @@ header .logo-link span {
 
 header .nav-list-item {
     display: inline-block;
-    padding: 19px 10px
+    padding: 19px 10px;
+    font-family: sans-serif
 }
 
 header .nav-list-item a {
@@ -410,6 +410,10 @@ header .nav-list-item a {
     font-size: 1.5em
 }
 
+.post-title {
+    font-family: sans-serif
+}
+
 .post-block .post-info {
     color: #7f8c8d;
     margin: 1.2em 0
@@ -434,7 +438,8 @@ header .nav-list-item a {
 .post-content h5,
 .post-content h6 {
     position: relative;
-    margin: 1em 0
+    margin: 1em 0;
+    font-family: sans-serif
 }
 
 .post-content h2:before,
@@ -803,7 +808,8 @@ pre .xml .cdata {
     border-bottom: 4px solid #3aa373;
     font-size: 14px;
     color: #fff;
-    background-color: #4fc08d
+    background-color: #4fc08d;
+    font-family: sans-serif
 }
 
 .paginator .prev:hover,
