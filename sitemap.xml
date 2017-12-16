@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2017-12-10T15:31:06.545Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/Creating-scrolling-text-with-Unity/</loc>
     
-    <lastmod>2017-12-10T15:30:08.667Z</lastmod>
+    <lastmod>2017-12-14T12:09:01.873Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/Making-a-simple-platformer-with-Love-Part-1/</loc>
     
-    <lastmod>2017-10-29T15:53:18.063Z</lastmod>
+    <lastmod>2017-12-13T21:03:48.338Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2017-12-10T15:31:06.545Z</lastmod>
     
   </url>
   
