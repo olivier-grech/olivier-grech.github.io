@@ -266,6 +266,10 @@ a:active {
     text-decoration: none
 }
 
+.nav-list-link {
+    font-weight: 800;
+}
+
 a.nav-list-link.active,
 a.nav-list-link:hover,
 a.post-title-link:hover {
@@ -322,7 +326,8 @@ header .logo-link {
     float: left;
     display: inline-block;
     padding: 19px 10px;
-    font-family: sans-serif
+    font-family: sans-serif;
+    font-weight: 800
 }
 
 header .nav {
@@ -405,6 +410,10 @@ header .nav-list-item a {
     float: left;
     width: 125px;
     color: #7f8c8d
+}
+
+.archive-year {
+    font-family: sans-serif;
 }
 
 .post {
@@ -551,17 +560,22 @@ code,
 pre {
     font-size: 0.8em;
     font-family: monospace;
-    /*background-color: #f8f8f8;*/ /*Default*/
+    /*background-color: #f8f8f8;*/
+    /*Default*/
 }
 
+
 /*Added to differentiate code and inline code*/
+
 pre {
-    background-color: #272822; 
+    background-color: #272822;
 }
 
 code {
     color: #34495e;
 }
+
+
 /*----------*/
 
 .highlight {
@@ -570,8 +584,10 @@ code {
     border-radius: 2px;
     line-height: 1.1em;
     /*Maybe this part can be let to default*/
-    /*background-color: #f8f8f8;*/ /*Default*/
-    background-color: #272822; /*Custom*/
+    /*background-color: #f8f8f8;*/
+    /*Default*/
+    background-color: #272822;
+    /*Custom*/
     overflow-x: auto
 }
 
@@ -705,8 +721,9 @@ code {
 }
 
 pre {
-    /*color: #525252*/ /*Default*/
-    color: #F8F8F0 /*Custom*/
+    /*color: #525252*/
+    /*Default*/
+    color: #F8F8F0/*Custom*/
 }
 
 pre .function .keyword,
@@ -783,8 +800,10 @@ pre .doctype,
 pre .shebang,
 pre .apache .sqbracket,
 pre .tex .formula {
-    color: #525252; /*Custom*/
-    /*color: #b3b3b3*/ /*Default*/
+    color: #525252;
+    /*Custom*/
+    /*color: #b3b3b3*/
+    /*Default*/
 }
 
 pre .deletion {
@@ -901,6 +920,7 @@ footer .copyright a {
 footer .copyright a:hover {
     color: #888
 }
+
 
 /*@font-face {
     font-family: 'sourcesanspro';
