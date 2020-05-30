@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Public Sans";
+  src: url(webfonts/PublicSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Public Sans Extra Bold";
+  src: url(webfonts/PublicSans-ExtraBold.ttf) format("truetype");
+}
+
+body {
+  font-family: "Public Sans";
+  margin: auto;
+  color: #111111;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  color: #111111;
+  font-family: "Public Sans Extra Bold";
+}
+
+::selection { background-color: #ffdc00; }
+
+.date {
+  color: #aaaaaa;
+}
+
+.image {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
