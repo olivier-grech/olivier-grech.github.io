@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "Public Sans";
-  src: url(webfonts/PublicSans-Regular.ttf) format("truetype");
+  font-family: "Inter";
+  src: url(webfonts/Inter-Regular.woff2) format("truetype");
 }
 
 @font-face {
-  font-family: "Public Sans Extra Bold";
-  src: url(webfonts/PublicSans-ExtraBold.ttf) format("truetype");
+  font-family: "Inter Black";
+  src: url(webfonts/Inter-Black.woff2) format("truetype");
 }
 
 body {
-  font-family: "Public Sans";
+  font-family: "Inter";
   margin: auto;
   color: #000000;
   background-color: #fafafa;
@@ -19,7 +19,7 @@ h1,
 h2,
 h3 {
   color: #000000;
-  font-family: "Public Sans Extra Bold";
+  font-family: "Inter Black";
 }
 
 p {
@@ -31,7 +31,10 @@ a {
   color: #0e9a83;
 }
 
-::selection { background-color: #64baff; }
+::selection { 
+  background-color: #64baff;
+  color: #fafafa;
+}
 
 .date {
   color: #abacae;
