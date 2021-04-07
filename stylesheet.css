@@ -11,8 +11,8 @@
 body {
   font-family: "Public Sans";
   margin: auto;
-  color: #111111;
-  background-color: #ffffff;
+  color: #1a1a1a;
+  background-color: #fafafa;
 }
 
 h1,
@@ -27,10 +27,10 @@ p {
   text-align: justify;
 }
 
-::selection { background-color: #ffdc00; }
+::selection { background-color: #64baff; }
 
 .date {
-  color: #aaaaaa;
+  color: #abacae;
 }
 
 .image {
