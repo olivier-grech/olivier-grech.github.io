@@ -11,20 +11,24 @@
 body {
   font-family: "Public Sans";
   margin: auto;
-  color: #1a1a1a;
+  color: #000000;
   background-color: #fafafa;
 }
 
 h1,
 h2,
 h3 {
-  color: #1a1a1a;
+  color: #000000;
   font-family: "Public Sans Extra Bold";
 }
 
 p {
   hyphens: auto;
   text-align: justify;
+}
+
+a {
+  color: #0e9a83;
 }
 
 ::selection { background-color: #64baff; }
