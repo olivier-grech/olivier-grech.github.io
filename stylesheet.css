@@ -9,10 +9,14 @@
 }
 
 body {
-  font-family: "Inter";
-  margin: auto;
-  color: #000000;
   background-color: #fafafa;
+  color: #000000;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 650px;
+  padding: 0 10px;
 }
 
 h1,
@@ -27,17 +31,8 @@ p {
   text-align: justify;
 }
 
-a {
-  color: #0e9a83;
-}
-
-::selection { 
-  background-color: #64baff;
-  color: #fafafa;
-}
-
-.date {
-  color: #abacae;
+img {
+  width: 100%;
 }
 
 .image {
@@ -47,4 +42,17 @@ a {
   margin-right: auto;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fafafa;
+    background: #000000;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #fafafa;
+  }
 }
