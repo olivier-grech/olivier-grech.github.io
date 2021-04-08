@@ -35,13 +35,8 @@ img {
   width: 100%;
 }
 
-.image {
+figcaption {
   text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
 
 @media (prefers-color-scheme: dark) {
